@@ -10,14 +10,37 @@
 	font-size: 24px;
 	line-height: 1
 	text-align: center;
+	position relative
+	margin 0 auto 60px
+	height: 44px
 	width 100%
 	max-width 490px
-	margin 0 auto 60px
-	padding 12px 0 18px
-	background-image url(../img/pre_img.png)
-	background-repeat no-repeat
-	background-position: center
-	background-size 100% 100%
+	&:before
+		content ''
+		display block
+		position: absolute
+		top 4px
+		right -10px
+		background-image url(../img/title_dna.png)
+		background-repeat no-repeat
+		background-position: center
+		background-size 100% 100%
+		width 31px
+		height 53px
+	p
+		position: absolute
+		top 5px
+		left 0
+		width 100%
+		max-width 460px
+		margin 0 auto
+		border-radius: 15px 0 0 15px
+		border-top: 1px solid #CECFD0
+		border-right: 1px solid transparent
+		border-bottom: 2px solid #F1F1F1
+		border-left: 2px solid #F2F2F2
+		line-height: 44px
+		padding 0 10px 0 30px
 .main-title
 	font-size: 50px
 	font-family: "RussoOne", sans-serif
@@ -53,6 +76,7 @@
 	width 100%
 	max-width 490px
 	padding: 8px 60px 17px 90px;
+
 	span
 		font-family: "OpenSansExtraBold", sans-serif
 		color: #ffbe72
