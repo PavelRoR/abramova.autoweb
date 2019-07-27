@@ -2,7 +2,9 @@ section#author
 	.container
 		.row
 			.col-md-8.col-sm-7
-				h3.author-title Автор - Жанна Абрамова
+				h3.author-title 
+					span Автор - Жанна Абрамова
+				.author-img.author-img-mobile
 				ul.author-list
 					li Мастер практической психологии, факультет клинической психологии Академии при президенте РФ РАНХиГС
 					li Специалист по метафорическим картам (МАК Израиль)
@@ -12,19 +14,16 @@ section#author
 					li Коуч, женский тренер, автор трансформационных программ:
 					p.author-text МАК «Ключ к неизведанному», «Восстановление справедливости», «Отправная точка заболеваний», «За гранью разума», «Сам себе доктор», «Метафизика — Ключ к исцелению Души и тела», «Управление реальностью», «Мышление будущего», трансформационный женский тренинг «Анатомия Отношений», «От перца к сердцу», «Как получать подарки», «Замуж за 2 недели», «Деньги в голове», «Дуэль с ленью», «Возврат ваших вложений», «Третий лишний или как устранить соперницу»
 			.col-md-4.col-sm-5
-				.row
-					.col-md-12.col-sm12.col-xs-6
-						#author-img
-					.col-md-12.col-sm12.col-xs-6
-						h4.certs-title Сертификаты:
-						#certs-slider.carousel.slide(data-ride="carousel" data-interval="3000")
-							.carousel-inner(role="listbox")
-								.item.active
-									a.cert-link(href="img/certs/cert_1.jpg" data-fancybox="certs")
-										img.cert-img(src="img/certs/cert_1_min.jpg", alt="Сертификат 1")
-								.item
-									a.cert-link(href="img/certs/cert_2.jpg" data-fancybox="certs")
-										img.cert-img(src="img/certs/cert_2_min.jpg", alt="Сертификат 2")
-							ol.carousel-indicators.certs_indicators
-								li.active( data-target="#certs-slider" data-slide-to="0")
-								li( data-target="#certs-slider" data-slide-to="1")
+				.author-img.author-img-desktop
+				h4.certs-title Сертификаты:
+				#certs-slider.carousel.slide(data-ride="carousel" data-interval="3000")
+					.carousel-inner(role="listbox")
+						.item.active
+							a.cert-link(href="img/certs/cert_1.jpg" data-fancybox="certs")
+								img.cert-img(src="img/certs/cert_1_min.jpg", alt="Сертификат 1")
+						.item
+							a.cert-link(href="img/certs/cert_2.jpg" data-fancybox="certs")
+								img.cert-img(src="img/certs/cert_2_min.jpg", alt="Сертификат 2")
+					ol.carousel-indicators.certs_indicators
+						li.active( data-target="#certs-slider" data-slide-to="0")
+						li( data-target="#certs-slider" data-slide-to="1")
