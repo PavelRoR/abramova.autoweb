@@ -1,0 +1,72 @@
+-var full_1 = '18 900р.'
+-var full_2 = '31 900р.'
+
+-var sale_1 = '1 000р.'
+-var sale_2 = '2 000р.'
+
+-var today_1 = '17 900р.'
+-var today_2 = '29 900р.'
+
+-var link_1 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3396&clean=true&lg=ru'
+-var link_2 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3402&clean=true&lg=ru'
+
+section#prices
+	.container
+		h3.general-title-black Выберите 
+			span свой пакет
+			| &nbsp;участия
+		.packets
+			.row
+				.col-md-6.col-sm-6
+					.packet.packet-1
+						.packet-head
+							h4.packet-head-title Модуль 1
+						.packet-body
+							h5.packet-body-title «Исцеление первичной клетки» 
+								small 9 занятий + 3 занятия ответов на вопросы (практикумы)
+							ul.packet-body-list
+								li Биология сознания
+								li Безопасность и выживание
+								li Страхи и фобии
+								li Эпигенетика
+								li Травмы как память вторжения
+								li Травмы при беременности
+								li Самосаботаж и заболевания
+								li Анатомия и метафизика
+								li Инструменты исцеления
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span= full_1
+							p.cost.cost-sale.hide Скидка:
+								span#sale-1= sale_1
+							p.cost.cost-today.hide Стоимость сегодня:
+								span#today-1= today_1
+							a.button.packet-button.packet-button-1(href= link_1 target="-blank")#link-1 Выбрать
+				.col-md-6.col-sm-6
+					.packet.packet-2
+						.packet-head
+							h4.packet-head-title Модуль 2
+						.packet-body
+							h5.packet-body-title Модуль 2 включает в себя модуль 1
+								small 21 занятие + 6 занятий вопросы на ответы (практикум)
+							ul.packet-body-list
+								li Женские заболевания 
+								li Наши ткани, кости и суставы
+								li Защитные системы организма
+								li Кто еще живет в нашем теле?
+								li Метафизика слуха и зрения
+								li Системы нашего тела
+								li Гормональная система и миссия души
+								li Чистые сосуды, здоровое сердце
+								li Внутренние органы, корни заболеваний
+								li Костная система - жизненный стержень
+								li Новообразования
+								li Манифестация и интеграция здоровья
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span= full_2
+							p.cost.cost-sale.hide Скидка:
+								span#sale-2= sale_2
+							p.cost.cost-today.hide Стоимость сегодня:
+								span#today-2= today_2
+							a.button.packet-button.packet-button-2(href= link_2  target="-blank")#link-2 Выбрать

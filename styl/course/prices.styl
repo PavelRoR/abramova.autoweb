@@ -1,0 +1,117 @@
+#prices
+	@extends #get
+	background-color: #1B1B1B
+	color #fff
+.general-title-black
+	font-size: 24px;
+	font-family: "RussoOne", sans-serif
+	border: 3px solid #FFBF6E
+	border-radius: 15px
+	line-height: 50px
+	padding 0 20px 0 112px
+	position relative
+	width 100%
+	max-width 615px
+	margin 0 auto 50px
+	text-align: center
+	&:before
+		content: ''
+		position: absolute
+		display block
+		top -10px
+		left 35px
+		background-image url(../img/about_title_dna.jpg)
+		background-repeat no-repeat
+		background-position: center
+		background-size contain
+		width 80px
+		height 70px
+.packets
+	width 100%
+	max-width 800px
+	margin 0 auto
+.packet
+	width 100%
+	max-width 340px
+	margin 150px auto 0
+	border-radius: 15px
+	padding: 170px 10px 30px;
+	border: 3px solid;
+	&:before
+		content: ''
+		display block
+		position: absolute
+		width 300px
+		height 300px
+		background-repeat no-repeat
+		background-position: center
+		top 0
+		left 0
+		right 0
+		margin 0 auto
+	&:after
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -8px;
+		margin: 0 auto;
+		background-color: #1B1B1B
+		height: 19px;
+		width: 110px;
+		background-repeat: no-repeat;
+		background-position: center;
+	&-1
+		border-color: #FFBF73
+		&:before
+			background-image url("../img/day_img_1.png")
+		&:after
+			background-image: url("../img/plan_dna_1.png");
+	&-2
+		border-color: #FFBF73
+		&:before
+			background-image url("../img/day_img_3.png")
+		&:after
+			background-image: url("../img/plan_dna_2.png");
+.packet-head
+	position relative
+	&-title
+		position: absolute
+		color #fff
+		font-size: 22px
+		font-family: "OpenSansBold", sans-serif
+		top - 297px
+		left 0
+		right 0
+		text-align: center
+.packet-body-title
+	font-size: 20px
+	font-family: "RussoOne", sans-serif
+	margin-bottom: 25px
+	text-align: center
+	small
+		display block
+		font-size: 70%
+		font-family:  "OpenSansBold", sans-serif
+.packet-body-subtitle
+	font-size: 18px
+	text-align: center
+	margin-bottom: 10px
+.packet-body-list
+	margin-left: 25px
+	li
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+.cost
+	font-size: 22px
+	text-align: center
+	margin 30px 0 
+	span
+		display block
+		font-size: 32px
+		font-family: "OpenSansExtraBold", sans-serif
+.packet-button
+	margin-top: 0
+	background-color: #00ae5d
+	color #000

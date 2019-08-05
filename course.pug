@@ -1,0 +1,29 @@
+-var head_url = 'https://abramova.mastervision.su/metaphysics-webinar/course/';
+-var head_title = '«Метафизика - 3 шага к восстановлению души и тела»';
+-var head_description = 'Обучающий курс Жанны Абрамовой';
+-var styles = '../css/course.min.css';
+-var fav_ico = '../favicon.ico';
+-var fav_png = '../favicon.png';
+-var oferta = '../oferta/oferta_course.doc'
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/header
+		include pug/course/main
+		include pug/course/get
+		include pug/course/changes
+		include pug/course/prices
+		include pug/course/plan
+		include pug/course/for
+		include pug/course/author
+		include pug/course/revs
+		include pug/course/last
+		include pug/course/footer
+		include pug/course/scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts

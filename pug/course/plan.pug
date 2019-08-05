@@ -1,0 +1,70 @@
+section#plan
+	.container
+		h3.title-decorated План курса
+		#course-plan
+			ul.course-plan-buttons
+				li 
+					a(href="#module-1") Модуль 1
+				li 
+					a(href="#module-2") Модуль 2
+			.course-plan-container#module-1
+				h4.plan-module-title Модуль 1
+					small «Исцеление первичной клетки»  9 занятий + 3 занятия ответов на вопросы (практикумы)
+				#course-module-1
+					ul.modules-days-buttons
+						li 
+							a(href="#m-1-day-1") День 1
+						li 
+							a(href="#m-1-day-2") День 2
+						li 
+							a(href="#m-1-day-3") День 3
+						li 
+							a(href="#m-1-day-4") День 4
+						li 
+							a(href="#m-1-day-5") День 5
+						li 
+							a(href="#m-1-day-6") День 6
+						li 
+							a(href="#m-1-day-7") День 7
+						li 
+							a(href="#m-1-day-8") День 8
+						li 
+							a(href="#m-1-day-9") День 9
+					.modules-container
+						include modules/module_1
+			.course-plan-container#module-2
+				h4.plan-module-title Модуль 2
+					small Модуль 2 включает в себя модуль 1
+						br
+						| 12 занятий плюс 3 занятия вопросы на ответы (практикум) – это отдельно Модуль 2
+						br
+						| Итого, модуль 2: 21 теоретическое занятие + 6 ответов на вопросы (практикумы)
+				#course-module-2
+					ul.modules-days-buttons
+						li
+							a(href="#m-2-day-1") День 1
+						li
+							a(href="#m-2-day-2") День 2
+						li
+							a(href="#m-2-day-3") День 3
+						li
+							a(href="#m-2-day-4") День 4
+						li
+							a(href="#m-2-day-5") День 5
+						li
+							a(href="#m-2-day-6") День 6
+						li
+							a(href="#m-2-day-7") День 7
+						li
+							a(href="#m-2-day-8") День 8
+						li
+							a(href="#m-2-day-9") День 9
+						li
+							a(href="#m-2-day-10") День 10
+						li
+							a(href="#m-2-day-11") День 11
+						li
+							a(href="#m-2-day-12") День 12
+					.modules-container
+						include modules/module_2
+		a.button.plan-button(href="#prices") Записаться

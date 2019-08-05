@@ -1,0 +1,224 @@
+#second
+	padding 50px 0
+	text-align: center
+.second-text
+	font-size: 20px
+	span
+		background-color: #ffbf6e
+.bonus-name
+	font-family: 'RussoOne', sans-serif
+	margin 10px 0 25px
+	font-size: 22px
+button.close
+	position absolute
+	width: 35px
+	height 35px
+	border-radius: 50px
+	line-height: 30px
+	text-align: center
+	font-size: 24px
+	color: #000
+	background-color: #F0F0F0
+	top 10px
+	right 10px
+	left auto
+	z-index 99
+	opacity 1
+	transition: all .1s ease-in-out
+	&:hover
+		color: #F0F0F0
+		background-color: #000
+.form
+	background-color: #1B1B1B
+	text-align: center
+	border: 3px solid #FFBF6E
+	border-radius: 20px
+	width: 100%
+	max-width: 560px
+	margin: 0 auto
+	padding: 30px 20px
+.form-mail
+	width 100%
+	max-width 360px
+	height 45px
+	line-height 43px
+	padding: 0 20px
+	display block
+	margin 0 auto 10px
+	border-radius: 5px
+	color #000
+	border: 1px solid #eee
+@-webkit-keyframes autofill {
+	to {
+		color: #000;
+		background: #fff;
+	}
+}
+
+input:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+
+}
+.button-form
+	height 45px
+	line-height 45px
+	color: #000
+	background-color: #00ae5d
+	border-radius: 5px
+	margin 0 auto
+	width 100%
+	max-width 360px
+	transition: all .3s ease
+	&:hover
+		color: initial;
+		background-color: #ffbe72;
+
+.alert-message {
+	display: none;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 10px;
+	color: #f00
+}
+.checking {
+	display: table;
+	width 100%
+	max-width 505px
+	margin: 10px auto 0;
+	text-align: left
+}
+
+.checking .check-label {
+	color: #aaa
+	line-height: 15px;
+	cursor: pointer;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 25px;
+	text-align: left;
+	font-size: 14px
+}
+
+.checking .check-label a {
+	color: #aaa
+	text-decoration: underline
+}
+
+.checking .check-label:before {
+	content: '';
+	background-color: #666;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 16px;
+	height: 16px;
+	border none
+	border-radius: 3px
+}
+
+.checking .check-label:after {
+	content: '';
+	position: absolute;
+	left: 6px;
+	top: -10px;
+	width: 5px;
+	height: 9px;
+	background-color: transparent;
+	opacity: 0;
+	border-bottom: 3px solid #000
+	border-right: 3px solid #000
+	-webkit-transform: rotate(41deg);
+	-ms-transform: rotate(41deg);
+	transform: rotate(41deg);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.check {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height 0;
+	border: 0;
+	left -99999px;
+}
+
+.check:checked + .check-label:before {
+	background-color: #ffbe72
+
+}
+
+.check:checked + .check-label:after {
+	opacity: 1;
+	top: 4px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.materials
+	width 100%
+	max-width 700px
+	margin 0 auto 40px
+.button-materials
+.button-book
+	line-height 55px
+	width 100%
+	max-width 300px
+	margin 0 auto
+	&:focus
+		color initial
+		text-decoration: none
+	&:hover
+		color: initial;
+		background-color: #ffbe72;
+		text-decoration: none
+.button-materials
+	background-color: #2686c4
+	color #fff
+.button-book
+	background-color: #00ae5d
+.soc-buttons
+	width 100%
+	// max-width 115px
+	// margin 0 auto
+	text-align: center
+.soc-buttons-link
+	display: inline-block
+	line-height: 48px;
+	color: #fff;
+	text-align: center;
+	padding: 0 15px;
+	transition:  all .1s ease-in
+	border-radius: 5px
+	border: 1px solid #fff
+	font-size: 18px
+	margin  10px 5px 0
+	width 50px
+	border-radius: 50px
+	.fa
+		font-size: 20px;
+		vertical-align: baseline
+	&:focus
+		text-decoration: none
+		color #fff
+	&:hover
+		opacity: .9
+		color #fff
+		// transform:  scale(1.1)
+.soc-button-vk {
+	background-color: #31648B
+	// margin: 0 10px
+}
+
+.soc-button-tg {
+	background-color: #00B1EB;
+}
+
+.soc-button-ms {
+	background-color: #008CFF
+}

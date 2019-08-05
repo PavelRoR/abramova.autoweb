@@ -1,0 +1,178 @@
+.modal-backdrop
+	background-color #fff
+.modal-backdrop.in
+	background-color: #fff
+	opacity .95
+.mail-modal-content
+	background-color: #1B1B1B
+	text-align: center
+	border: 3px solid #FFBF6E
+	border-radius: 20px
+button.close
+	position absolute
+	width: 35px
+	height 35px
+	border-radius: 50px
+	line-height: 30px
+	text-align: center
+	font-size: 24px
+	color: #000
+	background-color: #F0F0F0
+	top 10px
+	right 10px
+	left auto
+	z-index 99
+	opacity 1
+	transition: all .1s ease-in-out
+	&:hover
+		color: #F0F0F0
+		background-color: #000
+.modal-title 
+	font-size: 26px
+	font-family: 'RussoOne', sans-serif
+	margin 0 auto 20px
+	width 100%
+	max-width 80%
+	color #fff
+.modal-mail
+	width 100%
+	max-width 360px
+	height 45px
+	line-height 43px
+	padding: 0 20px
+	border: 1px solid #fff
+	display block
+	margin 0 auto 10px
+	border-radius: 5px
+	color #000
+@-webkit-keyframes autofill {
+	to {
+		color: #000;
+		background: #fff;
+	}
+}
+
+input:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+
+}
+.button-modal
+	height 45px
+	line-height 45px
+	color: #000
+	background-color: #00ae5d
+	border-radius: 5px
+	margin 0 auto
+	width 100%
+	max-width 360px
+	transition: all .3s ease
+	&:hover
+		color: initial;
+		background-color: #ffbe72;
+
+.alert_message {
+	display: none;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 10px;
+	color: #f00
+}
+.checking {
+	display: table;
+	width 100%
+	max-width 505px
+	margin: 10px auto 0;
+	text-align: left
+}
+
+.checking .check_label {
+	color: #aaa
+	line-height: 15px;
+	cursor: pointer;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 25px;
+	text-align: left;
+	font-size: 14px
+}
+
+.checking .check_label a {
+	color: #aaa
+	text-decoration: underline
+}
+
+.checking .check_label:before {
+	content: '';
+	background-color: #666;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 16px;
+	height: 16px;
+	border none
+	border-radius: 3px
+}
+
+.checking .check_label:after {
+	content: '';
+	position: absolute;
+	left: 6px;
+	top: -10px;
+	width: 5px;
+	height: 9px;
+	background-color: transparent;
+	opacity: 0;
+	border-bottom: 3px solid #000
+	border-right: 3px solid #000
+	-webkit-transform: rotate(41deg);
+	-ms-transform: rotate(41deg);
+	transform: rotate(41deg);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.check {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height 0;
+	border: 0;
+	left -99999px;
+}
+
+.check:checked + .check_label:before {
+	background-color: #ffbe72
+
+}
+
+.check:checked + .check_label:after {
+	opacity: 1;
+	top: 4px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.politics-modal-dialog
+	width 100%
+	max-width 800px
+.politics-modal-content
+	background-color #fff
+	background-image none
+	.modal-title
+		font-size: 24px
+		text-align: left 
+		width 100%
+		max-width 90%
+		color #000
+		small
+			display: block
+	p
+		font-size: 16px
+		margin-bottom: 15px
+		text-align: left
+		color #000

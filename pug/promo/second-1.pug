@@ -1,0 +1,27 @@
+section#second
+	.container
+		p.second-text Оставьте свои данные чтобы получить рабочие тетради и таблицы для предстоящего мастер-класса "Метафизика- 3 шага к востановлению души и тела". Данные материалы понадобяться вам для продуктивной работы
+			br
+			| +
+		p.second-text 
+			span Бонус
+			br
+			| Книга Яро Старак, Тони Кей, Джеймс Олдхейм
+		p.second-text.bonus-name "ТЕХНИКИ ГЕШТАЛЬТ-ТЕРАПИИ НА КАЖДЫЙ ДЕНЬ"
+		form(action="https://shop.mastervision.su/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=803" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form
+			input( type="hidden" value="1" name="required_fields[email]")
+			input(class="mail form-mail" name="Contact[email]" type="text" placeholder="Ваш телефон")
+			button.button.button-form(type="submit") Получить материалы
+			p.alert-message 
+			.checking.checking-form
+				input(type="checkbox" id="check_m" checked).check
+				label(for="check_m").check-label Я согласен с 
+					a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки персональных данных
+					|  по 152 - Ф3
+			div(style="display: none;")
+				#formTypeSpecificVars(style="display: none;")
+					input(type="hidden" value="803" id="form_newsletter_id_newsletter" name="Contact[id_newsletter]")
+				<!-- API код канала рекламы -->
+				input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page" name="Contact[id_advertising_channel_page]")
+				input(type="hidden" name="formId" value="104")
+				input(type="hidden" name="formVc" value="2692080410")
