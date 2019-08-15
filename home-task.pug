@@ -18,5 +18,7 @@ html(lang="ru")
 		include pug/ht/main
 		include pug/ht/fb
 		include pug/ht/footer
+		script
+			| var isIE = false || !!document.documentMode;if (isIE) {var head = document.getElementsByTagName("head")[0];var link = document.createElement("link");link.rel = "stylesheet";link.href = "../css/ie.min.css";head.appendChild(link);}
 		//- include pug/scripts/chat
 		include pug/scripts/body_bottom_scripts
