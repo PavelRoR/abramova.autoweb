@@ -1,0 +1,122 @@
+RO = "RussoOne", sans-serif
+OS = "OpenSans", sans-serif
+OSB = "OpenSansBold", sans-serif
+
+@font-face {
+	font-family: 'RussoOne';
+	src: url('../fonts/RussoOne.eot');
+	src: url('../fonts/RussoOne.eot') format('embedded-opentype'),
+		 url('../fonts/RussoOne.woff2') format('woff2'),
+		 url('../fonts/RussoOne.woff') format('woff'),
+		 url('../fonts/RussoOne.ttf') format('truetype'),
+		 url('../fonts/RussoOne.svg#RussoOne') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans.eot');
+	src: url('../fonts/OpenSans.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSans.woff2') format('woff2'),
+		 url('../fonts/OpenSans.woff') format('woff'),
+		 url('../fonts/OpenSans.ttf') format('truetype'),
+		 url('../fonts/OpenSans.svg#OpenSans') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansBold';
+	src: url('../fonts/OpenSansBold.eot');
+	src: url('../fonts/OpenSansBold.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansBold.woff2') format('woff2'),
+		 url('../fonts/OpenSansBold.woff') format('woff'),
+		 url('../fonts/OpenSansBold.ttf') format('truetype'),
+		 url('../fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+@import '../css/_css/bootstrap.min.css'
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	font-size: 18px
+	font-family: OS
+	color #2a251d
+	background-color: #fff
+a
+	color: #fefefe
+	&:focus
+		outline: 0
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	margin 0
+button
+	border none
+section
+header
+footer
+	width 100%
+	display block
+.video-wrapper
+	margin 0 auto
+	position relative
+	width 100%
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #000
+		border-radius 3px
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+.button
+	display block
+	border-radius: 15px
+	font-size: 24px
+	font-family: RO
+	border: 0
+	&:focus
+		color initial
+		// background-color: initial
+	&:hover
+		color initial
+		background-color: #ffbe72
+.general-title
+	font-size: 24px
+	margin-bottom: 40px
+	font-family: RO
+	text-align: center
+
+@import 'header'
+@import 'task/main'
+@import 'task/fb'
+@import 'task/footer'
+@import 'task/medias'

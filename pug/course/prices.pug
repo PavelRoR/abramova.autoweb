@@ -10,6 +10,10 @@
 -var link_1 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3396&clean=true&lg=ru'
 -var link_2 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3402&clean=true&lg=ru'
 
+-var prep_bonus = '1 000р.'
+-var prep_cred = '2 000р.'
+-var prep_link = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3466&clean=true&lg=ru'
+
 section#prices
 	.container
 		h3.general-title-black Выберите 
@@ -70,3 +74,11 @@ section#prices
 							p.cost.cost-today.hide Стоимость сегодня:
 								span#today-2= today_2
 							a.button.packet-button.packet-button-2(href= link_2  target="-blank")#link-2 Выбрать
+		.prepayment
+			h4.prepaymant-title Акция!!!
+			p.prepayment-text Платите 1 000р., бонусом получаете 
+				span#prepayment_bonus= prep_bonus 
+				br
+				| На счет зачисляется 
+				span#prepayment-credited= prep_cred
+			a.button.prepayment-button(href= prep_link target="_blank")#prepayment-link Оплатить 1 000р.

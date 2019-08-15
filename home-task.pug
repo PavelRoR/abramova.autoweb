@@ -1,0 +1,22 @@
+-var head_url = 'https://abramova.mastervision.su/metaphysics-webinar/home-task/';
+-var head_title = 'Домашнее задание';
+-var head_description = 'К онлайн-мастер-классу Жанны Абрамовой';
+-var styles = '../css/task.min.css';
+-var fav_ico = '../favicon.ico';
+-var fav_png = '../favicon.png';
+-var fb_content = '2030481470529055';
+//- <?php require_once ('date/date.php'); ?>
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_fb_scripts
+	body
+		include pug/scripts/body_top_fb_scripts
+		include pug/header
+		include pug/ht/main
+		include pug/ht/fb
+		include pug/ht/footer
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
