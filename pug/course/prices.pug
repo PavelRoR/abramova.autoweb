@@ -24,10 +24,11 @@ section#prices
 						.packet-footer
 							p.cost.cost-full Стоимость:
 								span= full_1
-							p.cost.cost-sale.hide Скидка:
-								span#sale-1= sale_1
-							p.cost.cost-today.hide Стоимость сегодня:
-								span#today-1= today_1
+							if sale_1 && today_1
+								p.cost.cost-sale Скидка:
+									span#sale-1= sale_1
+								p.cost.cost-today Стоимость сегодня:
+									span#today-1= today_1
 							a.button.packet-button.packet-button-1(href= link_1 target="-blank")#link-1 Выбрать
 				.col-md-6.col-sm-6
 					.packet.packet-2
@@ -52,16 +53,18 @@ section#prices
 						.packet-footer
 							p.cost.cost-full Стоимость:
 								span= full_2
-							p.cost.cost-sale.hide Скидка:
-								span#sale-2= sale_2
-							p.cost.cost-today.hide Стоимость сегодня:
-								span#today-2= today_2
+							if sale_2 && today_2
+								p.cost.cost-sale Скидка:
+									span#sale-2= sale_2
+								p.cost.cost-today Стоимость сегодня:
+									span#today-2= today_2
 							a.button.packet-button.packet-button-2(href= link_2  target="-blank")#link-2 Выбрать
-		.prepayment
-			h4.prepaymant-title Акция!!!
-			p.prepayment-text Платите 1 000р., бонусом получаете 
-				span#prepayment_bonus= prep_bonus 
-				br
-				| На счет зачисляется 
-				span#prepayment-credited= prep_cred
-			a.button.prepayment-button(href= prep_link target="_blank")#prepayment-link Оплатить 1 000р.
+		if prep_bonus && prep_cred && prep_link
+			.prepayment
+				h4.prepaymant-title Акция!!!
+				p.prepayment-text Платите 1 000р., бонусом получаете 
+					span#prepayment_bonus= prep_bonus 
+					br
+					| На счет зачисляется 
+					span#prepayment-credited= prep_cred
+				a.button.prepayment-button(href= prep_link target="_blank")#prepayment-link Оплатить 1 000р.
