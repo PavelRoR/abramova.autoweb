@@ -8,9 +8,9 @@ section#second
 			br
 			| Книга Яро Старак, Тони Кей, Джеймс Олдхейм
 		p.second-text.bonus-name "ТЕХНИКИ ГЕШТАЛЬТ-ТЕРАПИИ НА КАЖДЫЙ ДЕНЬ"
-		form(action="https://shop.mastervision.su/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=803" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form
-			input( type="hidden" value="1" name="required_fields[email]")
-			input(class="mail form-mail" name="Contact[email]" type="text" placeholder="Ваш телефон")
+		form(action="https://shop.mastervision.su/?r=personal/newsletter/data/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form
+			input(type="hidden" value="1" id="required_fields_phone_number" name="required_fields[phone_number]")
+			input(class="mail form-mail" name="Contact[phone_number]" type="text" placeholder="Ваш телефон")
 			button.button.button-form(type="submit") Получить материалы
 			p.alert-message 
 			.checking.checking-form
@@ -23,5 +23,5 @@ section#second
 					input(type="hidden" value="803" id="form_newsletter_id_newsletter" name="Contact[id_newsletter]")
 				<!-- API код канала рекламы -->
 				input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page" name="Contact[id_advertising_channel_page]")
-				input(type="hidden" name="formId" value="104")
-				input(type="hidden" name="formVc" value="2692080410")
+				input(type="hidden" name="formId" value="130")
+				input(type="hidden" name="formVc" value="428845021")
