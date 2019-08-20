@@ -1,5 +1,7 @@
 //@prepros-prepend jquery-2.1.1.min.js
 //@prepros-prepend bootstrap.min.js
+//@prepros-prepend intlTelInput.min.js
+//@prepros-prepend utils.js
 
 var isIE = false || !!document.documentMode;
 
@@ -7,11 +9,36 @@ if (isIE) {
     var head = document.getElementsByTagName("head")[0];
     var link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "css/ie.promo.min.css";
+    link.href = "../css/ie.min.css";
     head.appendChild(link);
 }
 
 $(document).ready(function () {
+    $('.form-mail').intlTelInput({
+        defaultCountry: "ru",
+        initialCountry: "auto",
+        preferredCountries: ["ru", "ua", 'az', 'am', 'by', 'kz', 'kg', 'md', 'tj', 'uz', 'tm', 'ge'],
+        autoPlaceholder: 'aggressive',
+        nationalMode: false,
+        customPlaceholder: function (selectedCountryPlaceholder, selectedCountryData) {
+            return "+" + selectedCountryData.dialCode;
+        },
+        geoIpLookup: function (success, failure) {
+            /*
+            $.get( "https://ip-api.com/json/", function( data ) {
+                var countryCode = (data.countryCode) ? data.countryCode : "ru";
+                success(countryCode);
+            }, "json" );*/
+
+            $.get("https://ipinfo.io", function () {}, "jsonp").always(function (resp) {
+                var countryCode = (resp && resp.country) ? resp.country : "ru";
+                success(countryCode);
+            });
+        },
+        separateDialCode: false,
+        formatOnDisplay: false,
+        utilsScript: 'https://mk.beauty-matrix.ru/assets/plugins/intltelinput/js/utils.js',
+    });
     /* Работа формы */
     var check = $('.check'),
         phone = $('.form-mail'),

@@ -9,8 +9,10 @@ section#second
 			| Книга Яро Старак, Тони Кей, Джеймс Олдхейм
 		p.second-text.bonus-name "ТЕХНИКИ ГЕШТАЛЬТ-ТЕРАПИИ НА КАЖДЫЙ ДЕНЬ"
 		form(action="https://shop.mastervision.su/?r=personal/newsletter/data/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form
-			input(type="hidden" value="1" id="required_fields_phone_number" name="required_fields[phone_number]")
-			input(class="mail form-mail" name="Contact[phone_number]" type="text" placeholder="Ваш телефон")
+			.inputrow
+				.inputblock
+					input(type="hidden" value="1" id="required_fields_phone_number" name="required_fields[phone_number]")
+					input(class="mail form-mail" name="Contact[phone_number]" type="text" placeholder="Ваш телефон")
 			button.button.button-form(type="submit") Получить материалы
 			p.alert-message 
 			.checking.checking-form
